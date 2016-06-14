@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <form method="POST" action="/enroll">
+        {{ form.hidden_tag() }}
+        {{ form.exam_site.label }} {{ form.exam_site }}<br>
+        {{ form.name.label }} {{ form.name(size=20) }}<br>
+        {{ form.id_number.label }} {{ form.id_number(size=18) }}<br>
+        {{ form.id_type.label }} {{ form.id_type }}<br>
+    <input type="submit" value="提交">
+</form>
+</body>
+</html>
